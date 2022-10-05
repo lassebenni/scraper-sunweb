@@ -18,6 +18,10 @@ headers = {
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
+print(response.text)
+res = json.loads(response.text)['results']
+print(res)
 
-with open('results.json', 'w') as f:
-    json.dump(json.loads(response.text)['results'], f)
+if res:
+    with open('results.json', 'w') as f:
+        json.dump(, res f)
