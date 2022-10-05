@@ -1,3 +1,3 @@
 # Sunweb scraper
 
-[Latest files](https://flatgithub.com/lassebenni/sunweb-scraper/blob/main/results.json)
+[Latest files](https://flatgithub.com/lassebenni/scraper-sunweb/blob/main/results.json)
