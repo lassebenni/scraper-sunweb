@@ -18,10 +18,9 @@ headers = {
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
-print(response.text)
-res = json.loads(response.text)['results']
+res = json.loads(response.text)
 print(res)
 
 if res:
     with open('results.json', 'w') as f:
-        json.dump(res, f)
+        json.dump(res['results'], f)
